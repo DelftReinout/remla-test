@@ -11,5 +11,5 @@ jobs:
             - name: Build and Push Docker Image
               run: |
                 IMG=ghcr.io/${{github.repository}}
-                docker build --tag $IMG_LOWER:latest .
+                docker build --tag $IMG:latest .
                 docker push --all-tags $IMG
